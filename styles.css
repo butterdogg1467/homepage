@@ -13,6 +13,22 @@ p {
     margin: 0px;
 }
 
+.topbgcontain {
+    background-color: #0891B2;
+    width: 100vw;
+    height: 150px;
+    position: absolute;
+}
+
+.topbg {
+    background-color: #0891B2;
+    height: 400px;
+    width: 110vw;
+    position: absolute;
+    transform-origin: center;
+    transform: rotate(352deg) translateY(-110px) translateX(-50px);
+}
+
 .photoandabtme > picture > .imgcontain > img {
     width: 350px;
     height: 350px;
@@ -28,6 +44,7 @@ picture > h2 {
     width: fit-content;
     display: flex;
     align-items: center;
+    z-index: 10;
 }
 
 .iconcontain > img {
@@ -48,6 +65,7 @@ picture > h2 {
     box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 5px;
     display: flex;
     flex-direction: column;
+    background-color: white;
 }
 
 .aboutme > p {
