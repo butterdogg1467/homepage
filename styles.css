@@ -1,0 +1,32 @@
+body {
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+img {
+    background-color: red;
+    width: 350px;
+    height: 350px;
+    box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 5px;
+    position: relative;
+}
+
+.photoandabtme {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.aboutme {
+    height: 275px;
+    background-color: aqua;
+    padding-left: 15px;
+    padding-right: 30px;
+    box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 5px;
+}
