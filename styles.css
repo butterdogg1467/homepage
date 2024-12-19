@@ -134,3 +134,78 @@ section > div:first-of-type {
     max-width: 40px;
     max-height: 40px;
 }
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
+}
+
+.lefthalf {
+    grid-column: 1/2;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lefthalf > .footertext > h1 {
+    margin-top: 0px;
+}
+
+.footertext > p:first-of-type {
+    margin-bottom: 20px;
+}
+
+.footericons {
+    max-width: 40px;
+    max-height: 40px;
+    display: flex;
+}
+
+.footericon {
+    background-color: brown;
+}
+
+.righthalf {
+    grid-column: 2/3;
+    display: grid;
+    justify-content: end;
+}
+
+.righthalf > picture > img {
+    background-color: burlywood;
+    width: 550px;
+    height: 400px;
+}
+
+.emailandphone {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.phonenumber {
+    display: flex;
+    align-items: center;
+}
+
+.email {
+    display: flex;
+    grid-row: 2/3;
+    align-items: center;
+}
+
+.email > p, .phonenumber > p {
+    max-height: 18px;
+}
+
+.email > img, .phonenumber > img{
+    background-color: red;
+    height: 30px;
+    width: 30px;
+    margin-right: 6px;
+}
+
+
+
