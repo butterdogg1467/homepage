@@ -11,6 +11,8 @@ header {
 
 p {
     margin: 0px;
+    font-family: "Roboto", serif;
+    color: gray;
 }
 
 .topbgcontain {
@@ -74,6 +76,8 @@ picture > h2 {
 
 .aboutme > h1 {
     margin-bottom: 0px;
+    font-family: "Playfair Display", serif;
+    font-weight: lighter;
 }
 
 .imgcontain {
@@ -89,6 +93,8 @@ picture > h2 {
   transform: translate(-50%, -50%);
   font-size: 40px;
   width: 100%;
+  font-family: "Playfair Display", serif;
+  font-weight: lighter;
 }
 
 .iconcontain {
@@ -155,6 +161,11 @@ section > div:first-of-type {
     justify-content: space-between;
 }
 
+.projecticonsandtitleandtitle > h3 {
+    font-family: "Playfair Display", serif;
+    font-weight: lighter;
+}
+
 .projecticons {
     display: flex;
     width: 60px;
@@ -177,6 +188,15 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     padding: 30px;
     background-color: #0891B2;
+    color: white;
+}
+
+.footertext > h1 {
+    font-family: "Playfair Display", serif;
+    font-weight: lighter;
+}
+
+.footertext > p {
     color: white;
 }
 
@@ -243,12 +263,17 @@ footer {
 
 .email > p, .phonenumber > p {
     max-height: 18px;
+    color: white;
 }
 
 .email > img, .phonenumber > img {
     height: 30px;
     width: 30px;
     margin-right: 6px;
+}
+
+.address > p {
+    color: white;
 }
 
 
