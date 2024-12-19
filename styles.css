@@ -158,6 +158,8 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 30px;
+    background-color: #0891B2;
+    color: white;
 }
 
 .lefthalf {
@@ -176,13 +178,19 @@ footer {
 }
 
 .footericons {
-    max-width: 40px;
-    max-height: 40px;
+    max-width: 50px;
+    max-height: 50px;
     display: flex;
 }
 
 .footericon {
-    background-color: brown;
+    margin-right: 20px;
+    transition: transform 0.2s;
+}
+
+.footericon:hover {
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
 .righthalf {
@@ -193,7 +201,7 @@ footer {
 
 .righthalf > picture > img {
     background-color: burlywood;
-    width: 550px;
+    width: fit-content;
     height: 400px;
 }
 
@@ -219,8 +227,7 @@ footer {
     max-height: 18px;
 }
 
-.email > img, .phonenumber > img{
-    background-color: red;
+.email > img, .phonenumber > img {
     height: 30px;
     width: 30px;
     margin-right: 6px;
