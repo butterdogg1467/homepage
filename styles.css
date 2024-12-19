@@ -87,7 +87,6 @@ picture > h2 {
 }
 
 section {
-    background-color: blue;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -140,12 +139,19 @@ section > div:first-of-type {
 
 .projecticons {
     display: flex;
+    width: 60px;
 }
 
 .projecticon {
-    background-color: brown;
-    max-width: 40px;
-    max-height: 40px;
+    max-width: 25px;
+    max-height: 25px;
+    margin-right: 10px;
+    transition: transform 0.2s;
+}
+
+.projecticon:hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 footer {
