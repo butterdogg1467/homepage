@@ -14,7 +14,6 @@ p {
 }
 
 .photoandabtme > picture > .imgcontain > img {
-    background-color: red;
     width: 350px;
     height: 350px;
     box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 5px;
@@ -31,14 +30,28 @@ picture > h2 {
     align-items: center;
 }
 
+.iconcontain > img {
+    width: 100%;
+    transition: transform 0.2s;
+    margin-left: 10px;
+}
+
+.iconcontain > img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
 .aboutme {
     min-height: 275px;
-    background-color: aqua;
     padding-left: 15px;
     padding-right: 30px;
     box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 5px;
     display: flex;
     flex-direction: column;
+}
+
+.aboutme > p {
+    margin-top: 20px;
 }
 
 .aboutme > h1 {
@@ -57,20 +70,20 @@ picture > h2 {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 40px;
+  width: 100%;
 }
 
 .iconcontain {
-    background-color: red;
     display: flex;
     max-width: fit-content;
     align-self: end;
-    margin-top: 70px;
+    margin-top: 95px;
     margin-bottom: 10px;
 }
 
 .iconcontain > img {
-    max-width: 40px;
-    max-height: 40px;
+    max-width: 30px;
+    max-height: 30px;
 }
 
 section {
