@@ -9,12 +9,20 @@ header {
     padding: 50px;
 }
 
-img {
+p {
+    margin: 0px;
+}
+
+.photoandabtme > picture > .imgcontain > img {
     background-color: red;
     width: 350px;
     height: 350px;
     box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 5px;
     position: relative;
+}
+
+picture > h2 {
+    position: absolute;
 }
 
 .photoandabtme {
@@ -24,9 +32,105 @@ img {
 }
 
 .aboutme {
-    height: 275px;
+    min-height: 275px;
     background-color: aqua;
     padding-left: 15px;
     padding-right: 30px;
     box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutme > h1 {
+    margin-bottom: 0px;
+}
+
+.imgcontain {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.imgcontain > h2 {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+}
+
+.iconcontain {
+    background-color: red;
+    display: flex;
+    max-width: fit-content;
+    align-self: end;
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+.iconcontain > img {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+section {
+    background-color: blue;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+section > div > h1 {
+    font-size: 35px; 
+    margin: 10px;
+}
+
+section > div:first-of-type {
+    min-width: 972px;
+    display: flex;
+}
+
+.projectbox {
+    max-width: 300px;
+    padding-bottom: 30px;
+    text-align: start;
+    box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 5px;
+}
+
+.projectbox > picture > img {
+    background-color: orange;
+    min-width: 300px;
+    min-height: 250px;
+}
+
+.projecttext {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+.projects {
+    max-width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding-bottom: 100px;
+}
+
+.projecticonsandtitleandtitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projecticons {
+    display: flex;
+}
+
+.projecticon {
+    background-color: brown;
+    max-width: 40px;
+    max-height: 40px;
 }
